@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/subItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="@string/sub1"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub2"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub3"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub4"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub5"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub6"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="@string/sub7"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subItem8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subItem7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/sub8"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textSize="17sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

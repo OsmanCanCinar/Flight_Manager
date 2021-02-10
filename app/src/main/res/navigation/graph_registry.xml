@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentSignIn">
+
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="com.occ.flightmanager.registry.FragmentSignIn"
+        android:label="FragmentSignIn"
+        tools:layout="@layout/sign_in_fragment">
+        <action
+            android:id="@+id/action_fragmentSignIn_to_fragmentSingUp"
+            app:destination="@id/fragmentSingUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSingUp"
+        android:name="com.occ.flightmanager.registry.FragmentSignUp"
+        android:label="FragmentSingUp"
+        tools:layout="@layout/sign_up_fragment">
+        <action
+            android:id="@+id/action_fragmentSingUp_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+</navigation>

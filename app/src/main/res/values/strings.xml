@@ -1,0 +1,122 @@
+<!--suppress CheckTagEmptyBody --><resources>
+
+    <!-- BRANDING & NAMING -->
+    <string name="app_name">Flight Manager</string>
+    <string name="app_name1">Flight</string>
+    <string name="app_name2">Manager</string>
+
+    <!-- HINTS -->
+    <string name="username_hint">Enter username</string>
+    <string name="password_hint">Enter password</string>
+    <string name="password2_hint">Re-enter your password</string>
+    <string name="destination_hint">Enter destination</string>
+    <string name="country_hint">Enter country of destination</string>
+    <string name="stay_home">Stay Home, Stay Safe!</string>
+
+    <!-- REGISTRY ON SCREEN STRING VALUES -->
+    <string name="terms_and_conditions">I accept the Terms and Conditions.</string>
+    <string name="sign_up_button_text">SIGN UP</string>
+    <string name="sign_in_button_text">SIGN IN</string>
+    <string name="direct_me_to_si">Take me to Sign In</string>
+    <string name="direct_me_to_su">Take me to Sign Up</string>
+    <string name="account_off">Don\'t Have an Account?</string>
+    <string name="account_on">Already Have an Account?</string>
+    <string name="due_to">Due to the Covid-19 pandemic all flights are cancelled!</string>
+    <string name="abroad">Abroad</string>
+    <string name="domestic">Domestic</string>
+    <string name="country">Country:</string>
+    <string name="destination">Destination:</string>
+
+    <!-- MESSAGES & WARNINGS -->
+    <string name="passwords_does_not_match">Passwords must be indifferent!</string>
+    <string name="fields_empty">All fields must be filled!</string>
+    <string name="accept_terms">You can\'t continue without accepting the Terms and Conditions!</string>
+    <string name="sign_up_successful">Account created successfully.</string>
+    <string name="sign_in_successful">Welcome :)</string>
+    <string name="error">Ups! An error occurred!</string>
+    <string name="username_error">Username already exists!</string>
+    <string name="wrong_cred">Username/Password is wrong!</string>
+    <string name="language_changed">Language Changed</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="dismissed">Dismissed</string>
+    <string name="to_enable">To use up navigation swipe down and press on the back arrow.</string>
+    <string name="to_close">Shutdown the Application if you want to exit.</string>
+    <string name="to_logout">Tap on logout if you want to exit </string>
+    <string name="successful_msg">Successfully Created!</string>
+    <string name="inform_gear">HINT: You can click on the Gear Icon to set the Language.</string>
+    <string name="translate">In order to Translate the Language to Turkish, click on the Turkish Flag.</string>
+    <string name="must_select">Can\'t Continue without choosing an image!</string>
+    <string name="noway_2_update">It\'s Not Possible To UPDATE Right Now!</string>
+    <string name="updated">Updated Successfully!</string>
+    <string name="cannot_delete">It\'s Not Possible To DELETE Right Now!</string>
+    <string name="delete_successful">Deleted Successfully</string>
+    <string name="wanna_delete">Delete Selected Item</string>
+    <string name="r_u_sure">, are you sure you want to delete </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_saved">Not Deleted</string>
+    <string name="one_time">use navigation drawer to navigate!</string>
+
+    <!-- DRAWER TAGS -->
+    <string name="menu_home">Home</string>
+    <string name="menu_places">Places to Go</string>
+    <string name="menu_search">Flights</string>
+    <string name="menu_share">Share</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- MENU RELATED & BUTTONS-->
+    <string name="developer">By Osman Can Çınar</string>
+    <string name="plain_text">Flight Manager Application by Osman Can Çınar.</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logOut">Log out</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="delete_btn">Delete</string>
+    <string name="update_btn">Update</string>
+    <string name="select_img">Select Image</string>
+    <string name="save_btn">Save</string>
+
+    <!-- QUERY -->
+    <string name="db_name" translatable="false">FlightManager</string>
+    <string name="query_sign_in" translatable="false">SELECT * FROM registry WHERE username = ? AND password = ?</string>
+    <string name="query_create_table" translatable="false">CREATE TABLE IF NOT EXISTS registry (id INTEGER PRIMARY KEY, username VARCHAR UNIQUE, password VARCHAR)</string>
+    <string name="query_check" translatable="false">SELECT * FROM registry WHERE username = ?</string>
+    <string name="query_add" translatable="false">INSERT INTO registry (username, password) VALUES (?,?)</string>
+    <string name="query_list" translatable="false">SELECT * FROM destinations</string>
+    <string name="col_id" translatable="false">id</string>
+    <string name="col_cName" translatable="false">country</string>
+    <string name="col_dName" translatable="false">destinationName</string>
+    <string name="col_picture" translatable="false">picture</string>
+    <string name="query_element" translatable="false">CREATE TABLE IF NOT EXISTS destinations (id INTEGER PRIMARY KEY, destinationName VARCHAR, country VARCHAR, picture BLOB)</string>
+    <string name="query_insert" translatable="false">INSERT INTO destinations(destinationName, country, picture) VALUES (?,?,?)</string>
+    <string name="query_delete" translatable="false">DELETE FROM destinations WHERE id = ?</string>
+    <string name="query_update" translatable="false">UPDATE destinations SET destinationName = ?, country = ? WHERE id = ?</string>
+    <string name="query_display" translatable="false">SELECT * FROM destinations WHERE id = ?</string>
+
+    <!-- OTHER -->
+    <string name="content_desc">logo</string>
+    <string name="tr_flag_desc">Turkish Flag</string>
+    <string name="uk_flag_desc">UK Flag</string>
+    <string name="empty"> </string>
+    <string name="logged_out">You logged out!</string>
+
+    <!-- NOT TRANSLATABLE BECAUSE THEY ARE KEY VALUES. NOT FOR THR USER'S EYES -->
+    <string name="shared_language_key" translatable="false">Preferences</string>
+    <string name="selected_language" translatable="false">Selected_Lang</string>
+    <string name="en_lang" translatable="false">en</string>
+    <string name="tr_lang" translatable="false">tr</string>
+    <string name="share_type" translatable="false">text/plain</string>
+    <string name="edit" translatable="false">edit</string>
+    <string name="create">create</string>
+
+    <!-- SUBLIST ELEMENTS-->
+    <string name="welcome_text">Welcome to the Flight Manager, Major Features are listed below.</string>
+    <string name="sub1">+ Sign Up for an account.</string>
+    <string name="sub2">+ Sign In to your account.</string>
+    <string name="sub3">+ Log out from your account.</string>
+    <string name="sub4">+ Set the language as Turkish or English.</string>
+    <string name="sub5">+ Display the available flights.</string>
+    <string name="sub6">+ Share the application\'s description.</string>
+    <string name="sub7">+ User can add a destination that they want to visit or already visited. User needs to add a picture from the gallery to create the record.</string>
+    <string name="sub8">+ User can View, Update and Delete the record as they added to places to visit list from the same list.</string>
+</resources>
